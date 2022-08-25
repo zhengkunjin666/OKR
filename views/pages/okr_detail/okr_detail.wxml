@@ -1,0 +1,17 @@
+<!--pages/okr_detail/okr_detail.wxml-->
+<import src="/template/todoList/todoList"/>
+<import src="/template/coverPage/coverPage"/>
+<view class="page-container">
+  <template is="objective" data="{{objective}}"/>
+  <view class="okr-list" wx:for="{{okr}}" wx:key="id">
+    <view class="okr-item {{item.keyresult.active}}">
+      <view class="okr-title">{{item.keyresult.keyresult}}</view>
+      <view class="okr-todo-list">
+        <view class="okr-todo-item {{todo.active}}" wx:for="{{item.okr}}" wx:key="id" wx:for-item="todo">• {{todo.todo}}</view>
+      </view>
+      <view class="okr-status" hover-class="okr-staus_hover" id="{{item.keyresult.id}}" data-status="{{item.keyresult.status}}" bindtap="changeKRStatus">{{item.keyresult.status == 1 ? "已完成" : "点击标记"}}</view>
+    </view>
+  </view>
+</view>
+<template is="coverPage" data="{{btn,show}}"/>
+

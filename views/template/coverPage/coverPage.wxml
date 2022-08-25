@@ -1,0 +1,5 @@
+<template name="coverPage">
+  <page-container class="cover-page" show="{{show}}" bind:afterleave="showTabBar">
+  	<button class="todo-btn" style="width: 100%;height: 100rpx;" wx:for="{{btn}}" wx:key="name" id="{{item.id}}" data-status="{{item.status}}" bindtap="{{item.event}}">{{item.name}}</button>
+  </page-container>
+</template>

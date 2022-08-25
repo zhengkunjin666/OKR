@@ -1,0 +1,15 @@
+/**app.wxss**/
+@import "/template/todoList/todoList.wxss";
+@import "/template/coverPage/coverPage.wxss";
+@import "/template/okrList/okrList.wxss";
+
+page {
+  height: 100%;
+  font-size: 16px;
+  font-family: Arial;
+  color: #333;
+  line-height: 1.6;
+}
+.page-container {
+  height: 100%;
+} 

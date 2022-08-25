@@ -1,0 +1,12 @@
+/* pages/todo/todo.wxss */
+.todo-title {
+	font-size: 15px;
+	color: #999;
+}
+.todo-input {
+	height: 80rpx;
+	border: 1px solid #000;
+	margin-top: 30rpx;
+	padding-left: 20rpx;
+}
+

@@ -1,0 +1,30 @@
+<template name="todoList">
+	<view class="todo-list">
+		<view class="todo-item" hover-class="todo-item_hover" wx:for="{{todoList}}" wx:key="id"  bindtap="showPage" id="{{item.id}}">
+			<view class="todo-item-title">{{item.todo}}</view>
+			<view class="todo-item-time">• 创建时间：{{item.created_at}}</view>
+		</view>
+  </view>
+</template>
+
+<template name="objective">
+	<view class="todo-list">
+		<view class="todo-item" hover-class="todo-item_hover" wx:for="{{objective}}" wx:key="id"  bindtap="showPage" id="{{item.id}}" data-status="{{item.status}}">
+			<view class="todo-item-title">{{item.objective}}</view>
+			<view class="todo-item-time">• 创建时间：{{item.created_at}}</view>
+			<view class="todo-item-time" wx:if="{{item.status == 1}}">• 完成时间：{{item.done_at}}</view>
+			<view class="todo-item-icon" wx:if="{{item.status == 1}}">完成</view>
+		</view>
+  </view>
+</template>
+
+<template name="history">
+	<view class="todo-list">
+		<view class="todo-item" hover-class="todo-item_hover" wx:for="{{historyTodo}}" wx:key="id"  bindtap="showPage" id="{{item.id}}">
+			<view class="todo-item-title">{{item.todo}}</view>
+			<view class="todo-item-time">• 创建时间：{{item.created_at}}</view>
+			<view class="todo-item-time">• 完成时间：{{item.done_at}}</view>
+			<view class="todo-item-icon">完成</view>
+		</view>
+  </view>
+</template>

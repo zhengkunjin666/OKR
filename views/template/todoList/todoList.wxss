@@ -1,0 +1,39 @@
+.page-container {
+	padding: 40rpx 30rpx;
+	box-sizing: border-box;
+}
+.todo-list {
+  margin-top: 25rpx;
+  padding-bottom: 10rpx;
+}
+.todo-item {
+	background: #eee;
+	padding: 30rpx 20rpx;
+	margin-bottom: 10rpx;
+  display: flex;
+  flex-direction: column;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+}
+.todo-item_hover {
+  opacity: 0.6;
+}
+.todo-item-time {
+	font-size: 15px;
+	color: #999;
+}
+.todo-item-icon {
+	width: 160rpx;
+	height: 160rpx;
+	border-radius: 50%;
+	border: 2px solid #999;
+	font-size: 25px;
+	color: #999;
+	text-align: center;
+	line-height: 140rpx;
+	position: absolute;
+	top: -19rpx;
+	right: -33rpx;
+	transform: rotate(-45deg);
+}

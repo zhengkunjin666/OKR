@@ -1,0 +1,41 @@
+.page-container {
+	position: relative;
+}
+.okr-item {
+	margin-bottom: 30rpx;
+}
+.okr-input-container {
+	display: flex;
+}
+.okr-input {
+	height: 80rpx;
+	border: 1px solid #000;
+	padding-left: 20rpx;
+	margin-right: 40rpx;
+	flex: 1;
+}
+.okr-icon {
+	width: 80rpx;
+	height: 80rpx;
+	color: #fff;
+	background: #666;
+	text-align: center;
+	line-height: 80rpx;
+}
+.okr-icon_hover {
+	opacity: 0.6;
+}
+.okr-btn {
+	color: #fff;
+	background: #000;
+	letter-spacing: 20rpx;
+	padding: 0;
+	line-height: 100rpx;
+	border-radius: 0;
+	position: sticky;
+	top: 100%;
+	margin-top: 40rpx;
+}
+.okr-btn_hover {
+	opacity: 0.6;
+}

@@ -1,0 +1,11 @@
+/* pages/okr/okr.wxss */
+.objective-btn {
+	color: #fff;
+	background: #666;
+	border-radius: 0;
+	padding: 0;
+	line-height: 100rpx;
+}
+.objective-btn_hover {
+	opacity: 0.6;
+}

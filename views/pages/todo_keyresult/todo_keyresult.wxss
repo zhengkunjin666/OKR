@@ -1,0 +1,29 @@
+/* pages/todo_keyresult/todo_keyresult.wxss */
+.todo_keyresult-title {
+	font-size: 15px;
+	color: #999;
+}
+.todo_keyresult-list {
+	margin-top: 20rpx;
+}
+.todo_keyresult-item-title {
+	margin-bottom: 10rpx;
+}
+.todo_keyresult-btn {
+	font-weight: 400;
+	text-align: left;
+	background: #fff;
+	border: 1px solid #000;
+	border-radius: 0;
+	box-shadow: 0 0 0 1px #999;
+	padding: 0 10rpx;
+	line-height: 80rpx;
+  margin-bottom: 30rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.todo_keyresult-btn.active {
+  color: #fff;
+  background: #000;
+}

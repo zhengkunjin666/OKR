@@ -1,0 +1,8 @@
+<!--pages/history/history.wxml-->
+<import src="/template/todoList/todoList"/>
+<import src="/template/coverPage/coverPage"/>
+<view class="page-container">
+  <view class="history-title">已完成的Todos，真棒~</view>
+  <template is="history" data="{{historyTodo}}"/>
+</view>
+<template is="coverPage" data="{{btn,show}}"/>
