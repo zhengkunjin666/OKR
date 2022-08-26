@@ -18,14 +18,13 @@ var fs = require('fs');
 var enforceHttps = require('koa-sslify').default;
 app.use(enforceHttps());
 var options = {
-  key: fs.readFileSync('./san_domain_com.key', 'utf8'),
-  cert: fs.readFileSync('./san_domain_com.crt', 'utf8')
+  key: fs.readFileSync('./ssl/zhengkunjin.key', 'utf8'),
+  cert: fs.readFileSync('./ssl/zhengkunjin.crt', 'utf8')
 }
 
 // 使用路由，监听3000 端口
 https.createServer(options, app.callback()).listen(3000);
 app
-  // .use(cors())
   .use(koabody())
   .use(bodyParaser())
   .use(response)
